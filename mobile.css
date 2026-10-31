@@ -1,0 +1,41 @@
+/* mobile.css: phone/tablet fixes. style.css ke BAAD load karein.
+   Sab pages par chahiye to is poori file ko style.css ke end mein paste kar dein. */
+@media (max-width:720px){
+  html{font-size:15px}
+  :root{--header-h:60px}
+
+  /* Logo (header + footer) */
+  .logo{gap:.6rem}
+  .logo-mark{width:34px;height:34px}
+  .logo b{font-size:1.15rem}
+  .logo span{font-size:.5rem;letter-spacing:.22em;margin-top:.25rem}
+
+  /* Fonts */
+  .hero h1{font-size:2.1rem;line-height:1.1;margin:.7rem 0 1rem}
+  .hero-copy p{font-size:.95rem}
+  .eyebrow{font-size:.62rem;letter-spacing:.16em}
+  .about h2,.coach h2,.book h2,.proof h2,.cta h2{font-size:1.75rem}
+  .about p,.book p.txt,.coach .sub,.proof .sub{font-size:.92rem}
+
+  /* Buttons: dono ek line mein, barabar size */
+  .hero-btns{flex-wrap:nowrap;gap:.6rem;width:100%}
+  .hero-btns .btn{flex:1 1 0;justify-content:center;white-space:nowrap;padding:.8rem .5rem;font-size:.8rem;gap:.35rem}
+  .hero-btns .btn svg{width:13px;height:13px}
+  .cta .hero-btns{max-width:420px;margin-inline:auto}
+
+  /* Laura ki photo: buttons se neeche, thori jagah ke saath */
+  .hero-photo{margin:2.2rem auto 0;max-width:300px}
+  .hero-copy{padding-bottom:0}
+
+  /* Footer */
+  .site-footer .wrap{flex-direction:column;align-items:center;gap:1.1rem;padding-block:1.8rem;text-align:center}
+  .site-footer .logo{justify-content:center}
+  .foot-nav{justify-content:center;gap:.5rem 1.1rem;font-size:.8rem}
+  .social{justify-content:center;gap:1.3rem}
+  .foot-script{border:0;padding:0;font-size:1.35rem}
+}
+/* Bohat chhoti screen: buttons ek ke neeche ek, poori width */
+@media (max-width:380px){
+  .hero-btns{flex-direction:column}
+  .hero-btns .btn{flex:none;width:100%}
+}
